@@ -111,7 +111,7 @@ export default function AdminDashboardPage() {
             {/* Header */}
             <div>
                 <h1 className="text-2xl md:text-3xl font-bold text-foreground">Dashboard</h1>
-                <p className="text-muted-foreground mt-1">Welcome back! Here's what's happening.</p>
+                <p className="text-muted-foreground mt-1">Welcome back! Here&apos;s what&apos;s happening.</p>
             </div>
 
             {/* Stats Grid */}
@@ -123,7 +123,7 @@ export default function AdminDashboardPage() {
                                 <div>
                                     <p className="text-sm text-muted-foreground">{stat.label}</p>
                                     <p className="text-2xl font-bold text-foreground mt-1">{stat.value}</p>
-                                    {stat.total !== stat.value && (
+                                    {stat.total.toString() !== stat.value && (
                                         <p className="text-xs text-muted-foreground mt-1">
                                             of {stat.total} total
                                         </p>
