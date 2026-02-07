@@ -34,7 +34,7 @@ export default function BlogPostPage() {
             <div className="min-h-screen flex items-center justify-center">
                 <div className="text-center">
                     <h1 className="text-2xl font-bold mb-2">Article Not Found</h1>
-                    <p className="text-muted-foreground mb-4">The article you're looking for doesn't exist.</p>
+                    <p className="text-muted-foreground mb-4">The article you&apos;re looking for doesn&apos;t exist.</p>
                     <Link href="/blogs">
                         <Button>Back to Blog</Button>
                     </Link>
@@ -119,12 +119,12 @@ export default function BlogPostPage() {
                             </p>
                             <h3>Our Testing Methodology</h3>
                             <p>
-                                We evaluated each tool based on five key criteria: ATS compatibility, content quality, design flexibility, 
+                                We evaluated each tool based on five key criteria: &quot;ATS compatibility&quot;, content quality, design flexibility, 
                                 pricing, and success rate. Our team submitted resumes created with each tool to 100+ job applications across 
                                 different industries and experience levels.
                             </p>
                             <blockquote>
-                                "The right AI resume builder can increase your interview callback rate by up to 40%."
+                                &quot;The right AI resume builder can increase your interview callback rate by up to 40%.&quot;
                             </blockquote>
                             <h3>Top 8 AI Resume Builders That Actually Work</h3>
                             <p>
@@ -142,17 +142,17 @@ export default function BlogPostPage() {
                                 in tech. However, the interview process has evolved significantly, with new emphasis on system design, 
                                 behavioral competencies, and real-world problem-solving.
                             </p>
-                            <h3>What's Changed in 2026</h3>
+                            <h3>What&apos;s Changed in 2026</h3>
                             <p>
                                 The traditional algorithm-heavy interviews are giving way to more practical assessments. Companies now focus on 
                                 your ability to build scalable systems, work in teams, and adapt to changing requirements.
                             </p>
                             <blockquote>
-                                "Success in FAANG interviews now requires a balance of technical depth and practical experience."
+                                &quot;Success in FAANG interviews now requires a balance of technical depth and practical experience.&quot;
                             </blockquote>
                             <h3>The Complete Preparation Timeline</h3>
                             <p>
-                                Based on data from 500+ successful candidates, here's the optimal preparation strategy for each company, 
+                                Based on data from 500+ successful candidates, here&apos;s the optimal preparation strategy for each company, 
                                 including specific focus areas and timeline recommendations.
                             </p>
                         </>
@@ -171,7 +171,7 @@ export default function BlogPostPage() {
                                 Europe, and Asia. Salary data was normalized for experience level and geographic location.
                             </p>
                             <blockquote>
-                                "The highest-paying programming languages often align with emerging technologies and enterprise needs."
+                                &quot;The highest-paying programming languages often align with emerging technologies and enterprise needs.&quot;
                             </blockquote>
                             <h3>The Top 8 Languages for 2026</h3>
                             <p>
@@ -192,11 +192,11 @@ export default function BlogPostPage() {
                             <h3>Key Takeaways</h3>
                             <p>
                                 Our research and analysis provide actionable insights that can help you navigate your career path more effectively. 
-                                Whether you're just starting out or looking to make a strategic move, these insights are designed to give you 
+                                Whether you&apos;re just starting out or looking to make a strategic move, these insights are designed to give you 
                                 a competitive edge.
                             </p>
                             <blockquote>
-                                "Success in tech requires continuous learning and strategic career planning."
+                                &quot;Success in tech requires continuous learning and strategic career planning.&quot;
                             </blockquote>
                             <h3>Looking Ahead</h3>
                             <p>

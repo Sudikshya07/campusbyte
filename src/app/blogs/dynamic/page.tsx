@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { TrendingUp, Mail, BookOpen } from "lucide-react";
 import { Badge, Button } from "@/components/ui";
 import PostCard from "@/components/blog/PostCard";
@@ -26,11 +26,7 @@ export default function DynamicBlogsPage() {
     const [blogs, setBlogs] = useState<BlogPost[]>([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        fetchBlogs();
-    }, [selectedCategory]);
-
-    const fetchBlogs = async () => {
+    const fetchBlogs = useCallback(async () => {
         try {
             const params = new URLSearchParams();
             if (selectedCategory !== "All") {
@@ -64,7 +60,11 @@ export default function DynamicBlogsPage() {
         } finally {
             setLoading(false);
         }
-    };
+    }, [selectedCategory]);
+
+    useEffect(() => {
+        fetchBlogs();
+    }, [fetchBlogs]);
 
     const featuredPosts = blogs.slice(0, 2);
     const latestPosts = blogs.slice(2);
