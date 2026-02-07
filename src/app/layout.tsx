@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Space_Grotesk, Outfit, Syne } from "next/font/google";
 import "@/styles/globals.css";
 import { Navbar, Footer } from "@/components/shared";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
@@ -16,6 +16,27 @@ const inter = Inter({
 const playfair = Playfair_Display({
     subsets: ["latin"],
     variable: "--font-playfair",
+    display: "swap",
+});
+
+// Geometric, techy sans-serif - great for headings
+const spaceGrotesk = Space_Grotesk({
+    subsets: ["latin"],
+    variable: "--font-space",
+    display: "swap",
+});
+
+// Modern rounded sans - friendly and clean
+const outfit = Outfit({
+    subsets: ["latin"],
+    variable: "--font-outfit",
+    display: "swap",
+});
+
+// Bold display font - perfect for hero text
+const syne = Syne({
+    subsets: ["latin"],
+    variable: "--font-syne",
     display: "swap",
 });
 
@@ -65,7 +86,10 @@ export default function RootLayout({
             <body className={cn(
                 "min-h-screen flex flex-col bg-background font-sans antialiased",
                 inter.variable,
-                playfair.variable
+                playfair.variable,
+                spaceGrotesk.variable,
+                outfit.variable,
+                syne.variable
             )}>
                 <ThemeProvider
                     attribute="class"

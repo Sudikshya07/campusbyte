@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Briefcase, Trophy, Building2, Users, Sparkles, ChevronRight, Zap } from "lucide-react";
 import { Button, Badge } from "@/components/ui";
 import { motion } from "framer-motion";
@@ -33,11 +34,11 @@ export default function HomePage() {
                                 <Badge variant="default" className="mb-6 w-fit bg-primary/10 text-primary border-primary/20">
                                     <Sparkles size={14} className="mr-2" /> Top 1% Talent Pool
                                 </Badge>
-                                <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-foreground mb-6 leading-[0.9]">
+                                <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-foreground mb-6 leading-[0.9] font-display">
                                     Craft Your <br />
                                     <span className="text-primary italic font-serif">Legacy.</span>
                                 </h1>
-                                <p className="text-xl text-muted-foreground max-w-lg mb-8 leading-relaxed">
+                                <p className="text-xl text-muted-foreground max-w-lg mb-8 leading-relaxed font-rounded">
                                     A curated ecosystem for ambitious developers. Launch your career with premium roles, high-octane hackathons, and elite mentorship.
                                 </p>
                                 <div className="flex gap-4">
@@ -61,7 +62,7 @@ export default function HomePage() {
                                 <div className="p-3 bg-white/10 rounded-2xl w-fit group-hover:bg-primary transition-colors">
                                     <Briefcase className="w-6 h-6" />
                                 </div>
-                                <span className="text-4xl font-bold font-serif italic">2.5k+</span>
+                                <span className="text-4xl font-bold font-space">2.5k+</span>
                             </div>
                             <div>
                                 <h3 className="text-xl font-medium mb-1">Active Roles</h3>
@@ -76,7 +77,7 @@ export default function HomePage() {
                                 <div className="p-3 bg-white/10 rounded-2xl w-fit group-hover:bg-white group-hover:text-secondary transition-colors">
                                     <Trophy className="w-6 h-6" />
                                 </div>
-                                <span className="text-4xl font-bold font-serif italic">₹20L</span>
+                                <span className="text-4xl font-bold font-space">₹20L</span>
                             </div>
                             <div className="relative z-10">
                                 <h3 className="text-xl font-medium mb-1">Prize Pools</h3>
@@ -87,12 +88,32 @@ export default function HomePage() {
                         {/* Ticker / Carousel - 12 cols */}
                         <BentoItem delay={0.4} className="md:col-span-12 md:row-span-1 bg-card flex items-center overflow-hidden">
                             <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                                <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_li]:max-w-none animate-infinite-scroll">
-                                    {["Google", "Microsoft", "Amazon", "Netflix", "Uber", "Airbnb", "Stripe", "Coinbase"].map((company) => (
-                                        <li key={company} className="text-2xl font-bold text-muted-foreground font-serif italic uppercase tracking-widest">{company}</li>
+                                <ul className="flex items-center justify-center md:justify-start [&_li]:mx-14 [&_li]:max-w-none animate-infinite-scroll">
+                                    {[
+                                        { name: "Google", logo: "/logos/google.svg" },
+                                        { name: "Microsoft", logo: "/logos/microsoft.svg" },
+                                        { name: "Amazon", logo: "/logos/amazon.svg" },
+                                        { name: "Netflix", logo: "/logos/netflix.svg" },
+                                        { name: "Airbnb", logo: "/logos/airbnb.svg" },
+                                        { name: "Stripe", logo: "/logos/stripe.svg" },
+                                        { name: "Coinbase", logo: "/logos/coinbase.svg" },
+                                    ].map((company) => (
+                                        <li key={company.name} className="flex-shrink-0 flex items-center justify-center">
+                                            <Image src={company.logo} alt={company.name} width={100} height={40} className="h-10 w-auto opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300 dark:invert dark:brightness-200" />
+                                        </li>
                                     ))}
-                                    {["Google", "Microsoft", "Amazon", "Netflix", "Uber", "Airbnb", "Stripe", "Coinbase"].map((company) => (
-                                        <li key={`${company}-duplicate`} className="text-2xl font-bold text-muted-foreground font-serif italic uppercase tracking-widest">{company}</li>
+                                    {[
+                                        { name: "Google", logo: "/logos/google.svg" },
+                                        { name: "Microsoft", logo: "/logos/microsoft.svg" },
+                                        { name: "Amazon", logo: "/logos/amazon.svg" },
+                                        { name: "Netflix", logo: "/logos/netflix.svg" },
+                                        { name: "Airbnb", logo: "/logos/airbnb.svg" },
+                                        { name: "Stripe", logo: "/logos/stripe.svg" },
+                                        { name: "Coinbase", logo: "/logos/coinbase.svg" },
+                                    ].map((company) => (
+                                        <li key={`${company.name}-duplicate`} className="flex-shrink-0 flex items-center justify-center">
+                                            <Image src={company.logo} alt={company.name} width={100} height={40} className="h-10 w-auto opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300 dark:invert dark:brightness-200" />
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
@@ -114,8 +135,8 @@ export default function HomePage() {
                             className="relative"
                         >
                             <div className="absolute -top-10 -left-10 w-40 h-40 bg-rose-200/50 rounded-full blur-3xl" />
-                            <h2 className="text-6xl font-bold tracking-tighter mb-8 relative z-10">
-                                Don't just apply. <br />
+                            <h2 className="text-6xl font-bold tracking-tighter mb-8 relative z-10 font-display">
+                                Don&apos;t just apply. <br />
                                 <span className="font-serif italic text-rose-500">Dominate.</span>
                             </h2>
                             <p className="text-xl text-muted-foreground leading-loose mb-8">
@@ -123,11 +144,11 @@ export default function HomePage() {
                             </p>
                             <div className="grid grid-cols-2 gap-8">
                                 <div className="border-l-2 border-rose-500 pl-6">
-                                    <span className="block text-4xl font-bold mb-2">85%</span>
+                                    <span className="block text-4xl font-bold mb-2 font-space">85%</span>
                                     <span className="text-sm text-muted-foreground uppercase tracking-widest">Interview conversion rate</span>
                                 </div>
                                 <div className="border-l-2 border-border pl-6">
-                                    <span className="block text-4xl font-bold mb-2">10k+</span>
+                                    <span className="block text-4xl font-bold mb-2 font-space">10k+</span>
                                     <span className="text-sm text-muted-foreground uppercase tracking-widest">Mock interviews conducted</span>
                                 </div>
                             </div>
@@ -165,7 +186,7 @@ export default function HomePage() {
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                                 className="absolute -bottom-10 -left-10 bg-card p-6 rounded-2xl shadow-xl border border-border max-w-xs"
                             >
-                                <p className="text-foreground font-medium mb-2">"The preparation guides were a game changer. Cracked Google L4!"</p>
+                                <p className="text-foreground font-medium mb-2">&quot;The preparation guides were a game changer. Cracked Google L4!&quot;</p>
                                 <div className="flex items-center gap-2">
                                     <div className="w-8 h-8 bg-indigo-100 rounded-full" />
                                     <span className="text-xs text-muted-foreground font-bold">Priya S., SDE-II</span>
