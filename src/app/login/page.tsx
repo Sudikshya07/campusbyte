@@ -71,7 +71,7 @@ export default function LoginPage() {
                 </div>
 
                 <div className="relative z-10 max-w-lg">
-                    <h2 className="text-4xl font-serif font-bold mb-6 italic">"The future belongs to those who build it."</h2>
+                    <h2 className="text-4xl font-serif font-bold mb-6 italic">&quot;The future belongs to those who build it.&quot;</h2>
                     <p className="text-slate-300 text-lg leading-relaxed">
                         Join a community of 50,000+ developers, designers, and innovators. Access premium opportunities, hackathons, and mentorship.
                     </p>
@@ -197,7 +197,7 @@ export default function LoginPage() {
                     </div>
 
                     <p className="px-8 text-center text-sm text-muted-foreground">
-                        Don't have an account?{" "}
+                        Don&apos;t have an account?{" "}
                         <Link href="/register" className="underline underline-offset-4 hover:text-primary">
                             Sign up
                         </Link>

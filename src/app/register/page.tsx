@@ -67,7 +67,7 @@ export default function RegisterPage() {
                 </div>
 
                 <div className="relative z-10 max-w-lg">
-                    <h2 className="text-4xl font-serif font-bold mb-6 italic">"Start your journey today."</h2>
+                    <h2 className="text-4xl font-serif font-bold mb-6 italic">&quot;Start your journey today.&quot;</h2>
                     <p className="text-slate-300 text-lg leading-relaxed">
                         Create an account to unlock your potential. Hackathons, jobs, and community await.
                     </p>
