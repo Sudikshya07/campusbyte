@@ -1,5 +1,5 @@
-import { posts } from "@/data/posts";
-import PostCard from "@/components/PostCard";
+import { posts } from "../data/posts";
+import PostCard from "../components/PostCard";
 import { TrendingUp, Mail } from "lucide-react";
 
 export default function Home() {

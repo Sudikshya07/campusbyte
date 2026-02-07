@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Clock } from "lucide-react";
-import { Post } from "@/data/posts";
+import { Post } from "../data/posts";
 
 interface PostCardProps {
     post: Post;

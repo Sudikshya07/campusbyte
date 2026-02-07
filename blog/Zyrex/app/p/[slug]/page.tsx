@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { posts } from "@/data/posts";
+import { posts } from "../../../data/posts";
 import { Clock, User } from "lucide-react";
 
 export function generateStaticParams() {
