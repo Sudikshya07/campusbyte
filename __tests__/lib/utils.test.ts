@@ -43,15 +43,45 @@ describe("Utils", () => {
 
     describe("timeUntil", () => {
         it("calculates days correctly", () => {
-            const futureDate = new Date(Date.now() + 5 * 24 * 60 * 60 * 1000);
+            const now = new Date('2024-01-01T00:00:00Z');
+            const futureDate = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);
+            const originalDate = global.Date;
+            global.Date = class extends Date {
+                constructor(...args: any[]) {
+                    if (args.length === 0) {
+                        super(now.getTime());
+                    } else {
+                        super(...args);
+                    }
+                }
+                static now() {
+                    return now.getTime();
+                }
+            } as any;
             const result = timeUntil(futureDate);
+            global.Date = originalDate;
             expect(result.days).toBe(5);
             expect(result.isUrgent).toBe(false);
         });
 
         it("marks as urgent when less than 24 hours", () => {
-            const soonDate = new Date(Date.now() + 12 * 60 * 60 * 1000);
+            const now = new Date('2024-01-01T00:00:00Z');
+            const soonDate = new Date(now.getTime() + 12 * 60 * 60 * 1000);
+            const originalDate = global.Date;
+            global.Date = class extends Date {
+                constructor(...args: any[]) {
+                    if (args.length === 0) {
+                        super(now.getTime());
+                    } else {
+                        super(...args);
+                    }
+                }
+                static now() {
+                    return now.getTime();
+                }
+            } as any;
             const result = timeUntil(soonDate);
+            global.Date = originalDate;
             expect(result.isUrgent).toBe(true);
         });
     });

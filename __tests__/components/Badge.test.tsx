@@ -11,21 +11,21 @@ describe("Badge Component", () => {
         render(<Badge variant="accent">✨ PPO</Badge>);
         const badge = screen.getByText("✨ PPO");
         expect(badge).toBeInTheDocument();
-        expect(badge).toHaveClass("bg-accent-50");
+        expect(badge).toHaveClass("bg-accent/10");
     });
 
     it("renders with premium variant for IIT/NIT", () => {
         render(<Badge variant="premium">🏛️ IIT/NIT</Badge>);
         const badge = screen.getByText("🏛️ IIT/NIT");
         expect(badge).toBeInTheDocument();
-        expect(badge).toHaveClass("bg-premium");
+        expect(badge).toHaveClass("bg-premium/50");
     });
 
     it("renders with urgency variant for deadlines", () => {
         render(<Badge variant="urgency">🔥 24h left</Badge>);
         const badge = screen.getByText("🔥 24h left");
         expect(badge).toBeInTheDocument();
-        expect(badge).toHaveClass("bg-urgency-100");
+        expect(badge).toHaveClass("bg-urgency/10");
     });
 
     it("accepts custom className", () => {
