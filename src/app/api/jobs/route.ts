@@ -73,19 +73,6 @@ export async function GET(request: NextRequest) {
                 totalPages: Math.ceil(total / pageSize),
             },
         });
-            db.job.count({ where }),
-        ]);
-
-        return NextResponse.json({
-            success: true,
-            data: {
-                items: jobs,
-                total,
-                page,
-                pageSize,
-                totalPages: Math.ceil(total / pageSize),
-            },
-        });
     } catch (error) {
         console.error("Get jobs error:", error);
         return NextResponse.json(

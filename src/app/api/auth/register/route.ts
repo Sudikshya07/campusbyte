@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
                 password: hashedPassword,
                 name,
                 role: "USER",
-                skills: [],
+                skills: "[]",
             },
         }) as unknown as DBUser;
 
