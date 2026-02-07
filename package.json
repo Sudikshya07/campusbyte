@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -61,8 +61,16 @@
   "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "main": "postcss.config.js",
   "directories": {
-    "lib": "lib"
+    "doc": "docs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyamsingh5512/Zyrex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/satyamsingh5512/Zyrex/issues"
+  },
+  "homepage": "https://github.com/satyamsingh5512/Zyrex#readme"
 }
