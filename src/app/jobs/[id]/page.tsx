@@ -261,7 +261,14 @@ export default function JobDetailPage() {
                                         </div>
                                         <div className="flex justify-between">
                                             <span className="text-muted-foreground">Deadline:</span>
-                                            <span className="font-medium">{deadline.text}</span>
+                                            <span className="font-medium">
+                                                {deadline.days > 0 
+                                                    ? `${deadline.days}d ${deadline.hours}h left`
+                                                    : deadline.hours > 0 
+                                                        ? `${deadline.hours}h left`
+                                                        : "Expired"
+                                                }
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="mt-4">

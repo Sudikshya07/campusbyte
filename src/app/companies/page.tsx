@@ -193,7 +193,7 @@ export default function CompaniesPage() {
 
                     {filteredCompanies.length === 0 && (
                         <div className="text-center py-20 text-muted-foreground">
-                            No companies found matching "{searchQuery}"
+                            No companies found matching &quot;{searchQuery}&quot;
                         </div>
                     )}
                 </div>
