@@ -42,31 +42,31 @@ const syne = Syne({
 
 export const metadata: Metadata = {
     title: {
-        default: "CarrierX - Career Development Portal",
-        template: "%s | CarrierX",
+        default: "CampusByte - Career Development Portal",
+        template: "%s | CampusByte",
     },
     description: "Find jobs, internships, hackathons, and preparation guides. Your one-stop career development platform.",
     keywords: ["jobs", "internships", "hackathons", "career", "placement", "interview prep"],
-    authors: [{ name: "CarrierX" }],
+    authors: [{ name: "CampusByte" }],
     openGraph: {
         type: "website",
         locale: "en_IN",
-        url: "https://carrierx.com",
-        siteName: "CarrierX",
-        title: "CarrierX - Career Development Portal",
+        url: "https://campusbyte.com",
+        siteName: "CampusByte",
+        title: "CampusByte - Career Development Portal",
         description: "Find jobs, internships, hackathons, and preparation guides.",
         images: [
             {
                 url: "/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "CarrierX",
+                alt: "CampusByte",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "CarrierX - Career Development Portal",
+        title: "CampusByte - Career Development Portal",
         description: "Find jobs, internships, hackathons, and preparation guides.",
         images: ["/og-image.png"],
     },
@@ -81,6 +81,8 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const isMaintenanceMode = process.env.MAINTENANCE_MODE === "true";
+
     return (
         <html lang="en" className="scroll-smooth">
             <body className={cn(
@@ -99,11 +101,11 @@ export default function RootLayout({
                 >
                     <Noise />
                     <Cursor />
-                    <Navbar />
+                    {!isMaintenanceMode && <Navbar />}
                     <main className="flex-1">
                         {children}
                     </main>
-                    <Footer />
+                    {!isMaintenanceMode && <Footer />}
                 </ThemeProvider>
             </body>
         </html>

@@ -36,7 +36,7 @@ export function Navbar() {
                     >
                         <Rocket size={20} />
                     </motion.div>
-                    <span className="text-foreground group-hover:text-primary transition-colors">CarrierX</span>
+                    <span className="text-foreground group-hover:text-primary transition-colors">CampusByte</span>
                 </Link>
 
                 {/* Desktop Navigation */}

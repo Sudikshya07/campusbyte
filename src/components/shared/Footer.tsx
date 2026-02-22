@@ -39,7 +39,7 @@ export function Footer() {
                             <div className="bg-primary text-white p-1.5 rounded-lg">
                                 <Rocket size={20} />
                             </div>
-                            <span>CarrierX</span>
+                            <span>CampusByte</span>
                         </Link>
                         <p className="text-sm text-slate-400 mb-4">
                             Your one-stop destination for jobs, internships, hackathons, and career resources.
@@ -115,7 +115,7 @@ export function Footer() {
                 {/* Bottom */}
                 <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-sm text-slate-500">
-                        © {new Date().getFullYear()} CarrierX. All rights reserved.
+                        © {new Date().getFullYear()} CampusByte. All rights reserved.
                     </p>
                     <p className="text-sm text-slate-500">
                         Made with ❤️ for students and developers

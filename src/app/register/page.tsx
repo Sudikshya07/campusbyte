@@ -62,7 +62,7 @@ export default function RegisterPage() {
                 <div className="relative z-10">
                     <div className="flex items-center gap-2 text-xl font-bold bg-white/10 w-fit px-4 py-2 rounded-full backdrop-blur-md border border-white/20">
                         <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
-                        CarrierX
+                        CampusByte
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ export default function RegisterPage() {
                 </div>
 
                 <div className="relative z-10 flex gap-4 text-sm text-slate-400">
-                    <span>© 2024 CarrierX</span>
+                    <span>© 2024 CampusByte</span>
                     <span>Privacy Policy</span>
                     <span>Terms</span>
                 </div>

@@ -1,4 +1,4 @@
-# CarrierX - Career Development Portal
+# CampusByte - Career Development Portal
 
 A production-ready Career and Competency Development Portal built with Next.js 14, TypeScript, Tailwind CSS, and PostgreSQL.
 
@@ -29,8 +29,8 @@ A production-ready Career and Competency Development Portal built with Next.js 1
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/carrierx.git
-cd carrierx
+git clone https://github.com/your-org/campusbyte.git
+cd campusbyte
 
 # Install dependencies
 npm install

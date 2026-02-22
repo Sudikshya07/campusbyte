@@ -10,13 +10,13 @@ const testimonials = [
         bg: "bg-blue-50 dark:bg-blue-900/10"
     },
     {
-        text: "Zyrex is the only platform where I actually get responses. The salary transparency saved me so much time.",
+        text: "CampusByte is the only platform where I actually get responses. The salary transparency saved me so much time.",
         author: "Michael C.",
         role: "Full Stack Engineer",
         bg: "bg-rose-50 dark:bg-rose-900/10"
     },
     {
-        text: "We hired our founding engineer through Zyrex. The quality of candidates is unmatched compared to LinkedIn.",
+        text: "We hired our founding engineer through CampusByte. The quality of candidates is unmatched compared to LinkedIn.",
         author: "David K.",
         role: "CTO @ FinTech Co",
         bg: "bg-amber-50 dark:bg-amber-900/10"

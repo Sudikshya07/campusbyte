@@ -404,7 +404,7 @@ export default function CreateJobPage() {
                                             {formData.isInternalApply && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                                         </div>
                                         <div>
-                                            <p className="font-medium text-slate-900">Apply via CarrierX</p>
+                                            <p className="font-medium text-slate-900">Apply via CampusByte</p>
                                             <p className="text-xs text-slate-500">Candidates apply through our platform</p>
                                         </div>
                                     </button>

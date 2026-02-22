@@ -1,6 +1,6 @@
 # Environment Setup Guide
 
-This guide will help you set up the environment variables for the CarrierX project.
+This guide will help you set up the environment variables for the CampusByte project.
 
 ## Quick Setup
 
@@ -143,8 +143,8 @@ For production deployment (e.g., Vercel):
 
 ```env
 # Production example
-DATABASE_URL="postgresql://user:pass@host:5432/carrierx"
+DATABASE_URL="postgresql://user:pass@host:5432/campusbyte"
 JWT_SECRET="production-jwt-secret-64-chars-long"
-NEXTAUTH_URL="https://carrierx.com"
+NEXTAUTH_URL="https://campusbyte.com"
 NODE_ENV="production"
 ```

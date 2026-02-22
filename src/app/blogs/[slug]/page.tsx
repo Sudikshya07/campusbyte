@@ -223,7 +223,7 @@ export default function BlogPostPage() {
                 <div className="mt-16 pt-16 border-t border-border text-center">
                     <h3 className="text-2xl font-bold mb-4">Ready to Accelerate Your Career?</h3>
                     <p className="text-muted-foreground mb-6">
-                        Join thousands of professionals who are already using CarrierX to land their dream jobs.
+                        Join thousands of professionals who are already using CampusByte to land their dream jobs.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/jobs">

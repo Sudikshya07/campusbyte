@@ -1,5 +1,5 @@
 {
-  "name": "carrierx",
+  "name": "campusbyte",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -67,10 +67,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/satyamsingh5512/Zyrex.git"
+    "url": "git+https://github.com/satyamsingh5512/CampusByte.git"
   },
   "bugs": {
-    "url": "https://github.com/satyamsingh5512/Zyrex/issues"
+    "url": "https://github.com/satyamsingh5512/CampusByte/issues"
   },
-  "homepage": "https://github.com/satyamsingh5512/Zyrex#readme"
+  "homepage": "https://github.com/satyamsingh5512/CampusByte#readme"
 }

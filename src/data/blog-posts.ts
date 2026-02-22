@@ -1,4 +1,4 @@
-// Blog posts data for CarrierX
+// Blog posts data for CampusByte
 export interface Post {
     id: string;
     title: string;

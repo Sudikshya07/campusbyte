@@ -98,7 +98,7 @@ jobs:
       - name: Build application
         run: npm run build
         env:
-          DATABASE_URL: "postgresql://user:pass@localhost:5432/carrierx"
+          DATABASE_URL: "postgresql://user:pass@localhost:5432/campusbyte"
       
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

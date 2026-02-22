@@ -23,7 +23,7 @@ export default function BlogsPage() {
             <section className="py-20 px-4 bg-muted/20 border-b border-border">
                 <div className="container mx-auto max-w-6xl text-center">
                     <Badge className="mb-4 bg-secondary/10 text-secondary border-secondary/20">
-                        <BookOpen size={14} className="mr-2" /> CarrierX Resources
+                        <BookOpen size={14} className="mr-2" /> CampusByte Resources
                     </Badge>
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
                         Accelerate Your <span className="text-primary italic font-serif">Career.</span>
@@ -94,7 +94,7 @@ export default function BlogsPage() {
                         {/* Newsletter */}
                         <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
                             <Mail className="w-8 h-8 mx-auto text-primary mb-4" />
-                            <h3 className="text-lg font-bold mb-2">Subscribe to CarrierX</h3>
+                            <h3 className="text-lg font-bold mb-2">Subscribe to CampusByte</h3>
                             <p className="text-sm text-muted-foreground mb-4">
                                 Get the latest career insights and job opportunities delivered to your inbox.
                             </p>
